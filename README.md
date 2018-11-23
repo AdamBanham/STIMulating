@@ -16,7 +16,7 @@ a reviewing system for resources and the ability to create new resources on the 
 Hopefully this will also allow for PLF development tracking and a gamification system to encourage not only the mentoring 
 scheme for STIMulate but also to allow for PLF through creating resources , providing insights from assignments and creating
 new workshops for PLF that have a lower workload in the mentoring system. The overall goal of this portion is to create a
-more complete experience for members to find development oppportunities , providing a framework for getting certifcates for 
+more complete experience for members to find development oppportunities , providing a framework for getting certificates for 
 parcapiates , offer more to lower interaction members and finally improve the expereince for entering PLF into the programme.
 
 
