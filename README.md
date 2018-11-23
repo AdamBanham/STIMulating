@@ -26,14 +26,9 @@ parcapiates , offer more to lower interaction members and finally improve the ex
 - Web browser as the main interaction method for users
 	- Needs to be reactive to both mobile , small and large desktop screens
 		- Mobile Requirements
-		
-			-iOS
-			
-			-Android
-			
+			- iOS
+			- Android			
 		- Desktop Screen
-			- 800 x 600
-			
-			- 1280 x 1080
-			
+			- 800 x 600			
+			- 1280 x 1080			
 			- 1920 x 1280
