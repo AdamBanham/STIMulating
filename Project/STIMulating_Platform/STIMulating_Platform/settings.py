@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+from time import timezone as tz
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -31,6 +32,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'certificate_system.apps.CertificateSystemConfig',
+    'create_resource.apps.CreateResourceConfig',
+    'performance_review_resource.apps.PerformanceReviewResourceConfig',
+    'personal_development_tracking.apps.PersonalDevelopmentTrackingConfig',
+    'resource_management.apps.ResourceManagementConfig',
+    'review_resource.apps.ReviewResourceConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -105,7 +112,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+#sets timezone to local timezone for the sever
+TIME_ZONE = str(tz/3600.0)
 
 USE_I18N = True
 
