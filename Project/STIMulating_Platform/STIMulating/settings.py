@@ -31,6 +31,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'certificate_system.apps.CertificateSystemConfig',
+    'create_resource.apps.CreateResourceConfig',
+    'performance_review_resource.apps.PerformanceReviewResourceConfig',
+    'personal_development_tracking.apps.PersonalDevelopmentTrackingConfig',
+    'resource_management.apps.ResourceManagementConfig',
+    'review_resource.apps.ReviewResourceConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
