@@ -1,8 +1,8 @@
-<html>
-    <head>
-        <title>STIMulating </title>
-    </head>
-    <body>
-        about us
-    </body>
-</html>
+{%extends "resource_management/base.html" %}
+{% load static %}
+{% block css%}
+    <link rel="stylesheet" type="text/css" href="{% static 'resource_management/about.css' %}">
+{% endblock %}
+{% block content %}
+        <h1><center>About Us</center></h1>
+{% endblock %}
