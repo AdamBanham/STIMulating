@@ -17,17 +17,50 @@
         <title>STIMulating </title>
     </head>
     <body>
-        <nav class="navbar navbar-light bg-secondary d-none d-sm-block d-md-none d-flex flex-column justify-content-center">
-            <!-- Start of navbar for small viewsports -->
-            <a class="nav-link text-success" href="{% url 'search_home' %}"><center>Welcome</center></a>
-            <center>
-            <form class="form-inline d-flex flex-column">
-                <input class="form-control mb-2 mr-auto ml-auto w-60 text-success" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success mt-2 mr-auto ml-auto text-success w-60 " type="submit">Search</button>
+        <nav class="navbar navbar-light bg-secondary d-flex d-sm-none w-100 flex-column">
+            <!-- Start of navbar for very small viewports -->
+            <a class="nav-link text-success text-center w-100" href="{% url 'search_home' %}">Welcome</a>
+            <form class="form-inline w-50">
+                <input class="form-control align-middle mr-auto ml-auto text-success mb-2 text-center" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success align-middle mr-auto ml-auto text-success mt-2" type="submit">Search</button>
             </form>
-            </center>
-            <a class="nav-link text-success" href="{% url 'search_about' %}"><center>About</center></a>
+            <a class="nav-link text-success w-100 text-center" href="{% url 'search_about' %}">About</a>
         </nav>
+        <!-- end of navbar-->
+        <!-- start of navar for small viewports-->
+        <nav class="navbar navbar-light bg-secondary d-none d-sm-flex d-md-none w-100">
+            <a class="nav-link text-success text-center w-25" href="{% url 'search_home' %}">Welcome</a>
+            <form class="form-inline w-50">
+                <input class="form-control align-middle mr-auto ml-auto text-success text-center" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success align-middle mr-auto ml-auto text-success " type="submit">Search</button>
+            </form>
+            <a class="nav-link text-success w-25 text-center" href="{% url 'search_about' %}">About</a>
+        </nav>
+        <!-- end of narbar-->
+        <!--- start of navbar for medium viewports-->
+        <nav class="navbar navbar-light bg-secondary d-none d-md-flex-inline d-lg-none w-100 ">
+            <a class="nav-link text-success w-25 text-center" href="{% url 'search_home' %}">Welcome</a>
+            <form class="form-inline w-50">
+                <input class="form-control mr-auto ml-auto text-success align-middle text-center" type="search" placeholder="What do you need help with?" aria-label="Search">
+                <button class="btn btn-outline-success mr-auto ml-auto text-success align-middle" type="submit">Search</button>
+            </form>
+            <a class="nav-link text-success w-25 text-center" href="{% url 'search_about' %}">About</a>
+        </nav>
+        <!-- end of navbar -->
+        <!-- start of navbar for large viewports-->
+        <nav class="navbar navbar-light bg-secondary d-none d-sm-none d-md-none d-lg-inline-flex d-xl-inline-flex w-100 ">
+            <a class="nav-link text-success w-25 text-center" href="{% url 'search_home' %}">Welcome</a>
+            <form class="form-inline w-50">
+                <div style="width:80%; padding: 2%;">
+                <input class="form-control mr-2 ml-2 text-success align-middle text-center w-100" type="search" placeholder="What do you need help with?" aria-label="Search">
+                </div>
+                <div style="width:20%; padding: 2%;">
+                <button class="btn btn-outline-success mr-auto ml-auto text-success align-middle w-100" type="submit">Search</button>
+                </div>
+            </form>
+            <a class="nav-link text-success w-25 text-center" href="{% url 'search_about' %}">About</a>
+        </nav>
+        <!-- end of navbar-->
 
         {% block content %}
         <!--content on the page to be replace by other templates using this page-->
